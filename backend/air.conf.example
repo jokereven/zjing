@@ -1,0 +1,70 @@
+# 配置文件[Air](https://github.com/cosmtrek/air)的TOML格式
+
+# 工作目录
+# 使用 ．或绝对路径，请注意以下目录必须在root目录下。
+root = "."
+tmp_dir = "tmp"
+
+[build]
+# 只需要写你平常编译使用的shell命令，你也可以使用 `make`。
+# Windows平台示例：cmd = "go build -o ./tmp/main.exe ."
+cmd = "go build -o ./tmp/main ."
+
+# 由`cmd`命令生成二进制文件。
+# Windows平台示例：bin = "tmp\\main.exe"
+bin = "tmp/main"
+
+# 自定义执行程序的命令，可以添加额外的编译标识例如添加 GIN_MODE=release。
+# Windows平台示例：full_bin = ""
+full_bin = "APP_ENV=dev APP_USER=air ./tmp/main"
+
+# 监听以下文件扩展名的文件
+include_ext = ["go", "tpl", "tmpl", "html"]
+
+# 忽略这些文件名扩展名或目录
+exclude_dir = ["assets", "tmp", "vendor", "frontend/node_modules"]
+
+# 监听以下指定目录的文件
+include_dir = []
+
+# 排除以下文件
+exclude_file = []
+
+# 排除特定的正则表达式
+exclude_regex = ["_test.go"]
+
+# 排除文件不变
+exclude_unchanged = true
+
+# 按照符号链接查找目录
+follow_symlink = true
+
+# air的日志文件名，该日志文件放置在你的`tmp_dir`中。
+log = "air.log"
+
+# 如果文件更改过于频繁，则没有必要在每次更改时触发构建。
+delay = 1000 # ms
+
+# 当发生构建错误时，停止运行旧的二进制文件。
+stop_on_error = true
+
+# 在终止进程之前发送中断信号(windows不支持此功能)
+# send_interrupt = false
+
+# 发送中断信号后延迟
+kill_delay = 500 # ms
+
+[log]
+# 显示日志的时间
+time = true
+
+[color]
+# 定制每个部分的颜色。 如果没有发现颜色，使用原始应用程序日志。
+main = "magenta"
+watcher = "cyan"
+build = "yellow"
+runner = "green"
+
+[misc]
+# 退出时删除tmp目录
+clean_on_exit = true

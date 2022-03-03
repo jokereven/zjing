@@ -1,0 +1,30 @@
+{
+  "id": "3198726",
+  "name": "jokereven",
+  "font_family": "iconfont",
+  "css_prefix_text": "",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2569555",
+      "name": "备案",
+      "font_class": "beian",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "278748",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "16153345",
+      "name": "版权专利",
+      "font_class": "banquanzhuanli",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    }
+  ]
+}

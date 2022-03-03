@@ -1,0 +1,54 @@
+.body {
+	height: 100%;
+}
+
+.body {
+	background-color: #f7f5f6;
+}
+
+.error {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container {
+	width: 988px;
+	height: 340px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	text-align: center;
+	background-color: #ffffff;
+	box-shadow: 0 10px 40px 0 rgba(128, 0, 59, 0.05);
+	border-radius: 10px;
+	color: #666666;
+	text-align: center;
+	font-weight: 400;
+}
+.icon,
+.GoBack {
+	display: block;
+	margin: 0 auto;
+}
+.icon {
+	width: 543px;
+	height: 213px;
+	margin-bottom: 30px;
+	background: url('../public/source/images/error.png') center center no-repeat;
+}
+.GoBack {
+	width: 302px;
+	text-decoration: none;
+	height: 40px;
+	background: #ff83c4;
+	box-shadow: 0 10px 20px 0 rgba(240, 99, 165, 0.4);
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffffff;
+	line-height: 40px;
+	text-align: center;
+}
