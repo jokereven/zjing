@@ -14,9 +14,9 @@ export async function getStaticProps() {
 export default function Blog({ allPostsData }) {
 	return (
 		<div className={styles.blog_container}>
-			<a href={'https://github.com/jokereven'} target='_new'>
+			<Link href={'https://github.com/jokereven'} target='_new'>
 				<h2>@jokereven</h2>
-			</a>
+			</Link>
 			<ul className={styles.blog_articles_container}>
 				{allPostsData.map(({ id, date, title, tag }) => (
 					<Link href={`/posts/${id}`} key={id}>
