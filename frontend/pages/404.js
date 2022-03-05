@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/404.module.css';
 
 export default function Custom404() {
@@ -12,9 +13,9 @@ export default function Custom404() {
 				<div className={styles.error}>
 					<div className={styles.container}>
 						<div className={styles.icon}></div>
-						<a href='/' className={styles.GoBack}>
-							返回首页
-						</a>
+						<Link href='/'>
+							<div className={styles.GoBack}>返回首页</div>
+						</Link>
 					</div>
 				</div>
 			</div>
