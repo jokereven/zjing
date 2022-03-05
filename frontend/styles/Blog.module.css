@@ -1,0 +1,76 @@
+.blog_container {
+	padding-top: 64px;
+}
+
+.blog_container h2 {
+	text-align: center;
+	font-weight: 800;
+	font-family: 宋体;
+	font-size: 24px;
+}
+
+.blog_container h2:hover {
+	cursor: pointer;
+	color: #005caf;
+}
+
+.blog_articles_container {
+	background: #fcfaf2;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.blog_container_list {
+	background: #fff;
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+	width: 256px;
+	height: 300px;
+	text-align: center;
+	margin-top: 25px;
+	border-radius: 12px;
+}
+
+.blog_container_list img {
+	width: 256px;
+	height: auto;
+	border-radius: 12px;
+}
+
+.blog_container_list:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+.blog_container_list h3 {
+	padding-top: 1rem;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 宋体;
+}
+
+.blog_container_list .time {
+	color: #34495e;
+	font-size: 12px;
+	font-family: 宋体;
+	padding: 1rem 0 0 1rem;
+	float: left;
+}
+
+.blog_container_list .tag {
+	float: right;
+	padding: 1rem;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: 宋体;
+	color: #525f7f;
+}
+
+.blog_container_list .time:hover {
+	color: #000;
+}
+
+.blog_container_list h3:hover {
+	color: #005caf;
+}
