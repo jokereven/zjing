@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import { getSortedPostsData } from '../../lib/posts.js';
 import styles from '../../styles/Blog.module.css';
 
