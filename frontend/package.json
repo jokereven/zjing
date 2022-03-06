@@ -25,7 +25,8 @@
     "remark-rehype": "^10.1.0",
     "remark-stringify": "^10.0.2",
     "remark-toc": "^8.0.1",
-    "unified-stream": "^2.0.0"
+    "unified-stream": "^2.0.0",
+    "valine": "^1.4.16"
   },
   "devDependencies": {
     "eslint": "8.10.0",
