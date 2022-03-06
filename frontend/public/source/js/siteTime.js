@@ -12,7 +12,7 @@ function siteTime() {
 	var todayHour = today.getHours();
 	var todayMinute = today.getMinutes();
 	var todaySecond = today.getSeconds();
-	var t1 = Date.UTC(2019, 12, 27, 17, 46, 00); //此处填写建站时间 依次为 年,月,日,时,分,秒注意格式 半角,
+	var t1 = Date.UTC(2022, 2, 26, 00, 00, 00); //此处填写建站时间 依次为 年,月,日,时,分,秒注意格式 半角,
 	var t2 = Date.UTC(
 		todayYear,
 		todayMonth,

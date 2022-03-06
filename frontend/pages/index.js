@@ -80,12 +80,12 @@ const Home = () => {
 					<span className='iconfont'>&#xe6ce;</span>{' '}
 					<span>
 						总浏览量:{' '}
-						<span id='busuanzi_value_site_uv'>
+						<span id='busuanzi_value_page_pv'>
 							<i className='fa fa-spinner fa-spin'></i>
 						</span>
 					</span>{' '}
 					| <span className='iconfont'>&#xe6ce;</span> 总访问人数:{' '}
-					<span id='busuanzi_value_page_pv'>
+					<span id='busuanzi_value_site_uv'>
 						<i className='fa fa-spinner fa-spin'></i>
 					</span>{' '}
 					人
