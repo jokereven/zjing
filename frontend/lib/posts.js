@@ -1,9 +1,15 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
+import rehypeDocument from 'rehype-document';
+import rehypeFormat from 'rehype-format';
+import rehypeStringify from 'rehype-stringify';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkParse from 'remark-parse';
 import prism from 'remark-prism';
+import remarkRehype from 'remark-rehype';
+import remarkToc from 'remark-toc';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -59,7 +65,26 @@ export async function getPostData(id) {
 	const processedContent = await remark()
 		.use(html)
 		.use(prism)
+		.use(remarkParse)
+		.use(remarkToc)
+		.use(remarkRehype)
+		.use(rehypeDocument, { title: 'Contents' })
+		.use(rehypeFormat)
+		.use(rehypeStringify)
 		.process(matterResult.content);
+
+	// const processedContent = await unified()
+	// 	.use(remarkParse)
+	// 	.use(remarkToc)
+	// 	.use(remarkRehype)
+	// 	.use(rehypeDocument, { title: 'Contents' })
+	// 	.use(rehypeFormat)
+	// 	.use(rehypeStringify)
+	// 	.process(matterResult.content)
+	// 	.then(file => {
+	// 		console.log(file);
+	// 	});
+
 	const contentHtml = processedContent.toString();
 
 	// Combine the data with the id and contentHtml

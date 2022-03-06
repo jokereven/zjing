@@ -10,17 +10,3 @@ Next.js has two forms of pre-rendering: **Static Generation** and **Server-side 
 - **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
 
 Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
-
-# 测试代码高亮
-
-```golang
-package main
-
-import "fmt"
-
-func main()  {
-  fmt.Println("Hello World");
-}
-```
-
-好像没成功明天在试试233

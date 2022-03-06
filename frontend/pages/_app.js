@@ -42,14 +42,7 @@ function MyApp({ Component, pageProps }) {
 				href='https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css'></link>
 			<Script src='/live2d/autoload.js'></Script>
 
-			{/* 代码高亮 */}
-			<link
-				href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css'
-				rel='stylesheet'
-			/>
-			<Script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css'></Script>
-
-			<Script src='source/js/back-to-up.js'></Script>
+			<Script src='/source/js/back-to-up.js'></Script>
 			<div id='top'></div>
 			<Header></Header>
 			<a href='#top' id='back-to-up'>
