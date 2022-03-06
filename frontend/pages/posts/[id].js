@@ -8,6 +8,15 @@ import useIsomorphicLayoutEffect from '../../hooks/useIsomorphicLayoutEffect.ts'
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import utilStyles from '../../styles/utils.module.css';
 
+function randomString(e) {
+	e = e || 32;
+	var t = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678',
+		a = t.length,
+		n = '';
+	for (i = 0; i < e; i++) n += t.charAt(Math.floor(Math.random() * a));
+	return n;
+}
+
 export default function Post({ postData }) {
 	useIsomorphicLayoutEffect(() => {
 		var gitalk = new Gitalk({
@@ -16,7 +25,7 @@ export default function Post({ postData }) {
 			repo: 'zjing',
 			owner: 'cnzjing125',
 			admin: ['jokereven'],
-			id: '1d2f70f4e24490b14ed25cd6428106332ceb0a06', // Ensure uniqueness and length less than 50
+			id: `${randomString(50)}`, // Ensure uniqueness and length less than 50
 			distractionFreeMode: false, // Facebook-like distraction free mode
 		});
 		gitalk.render('gitalk-container');
