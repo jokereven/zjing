@@ -1,5 +1,5 @@
 ---
-title: '使用 Next.js 搭建个人博客'
+title: 'build-blog-with-nextjs'
 date: '2022-03-06'
 tag: 'TEST'
 ---
