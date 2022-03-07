@@ -13,7 +13,7 @@ function randomString(e) {
 	var t = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678',
 		a = t.length,
 		n = '';
-	for (let i = 0; i < e; i++) n += t.charAt(Math.floor(Math.random() * a));
+	for (var i = 0; i < e; i++) n += t.charAt(Math.floor(Math.random() * a));
 	return n;
 }
 
@@ -25,7 +25,7 @@ export default function Post({ postData }) {
 			repo: 'zjing',
 			owner: 'cnzjing125',
 			admin: ['jokereven'],
-			id: `${randomString(50)}`, // Ensure uniqueness and length less than 50
+			id: `${randomString(25)}`, // Ensure uniqueness and length less than 50
 			distractionFreeMode: false, // Facebook-like distraction free mode
 		});
 		gitalk.render('gitalk-container');
