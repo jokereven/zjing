@@ -25,7 +25,7 @@ export default function Post({ postData }) {
 			repo: 'zjing',
 			owner: 'cnzjing125',
 			admin: ['jokereven'],
-			id: `${randomString(25)}`, // Ensure uniqueness and length less than 50
+			id: 'NDmHpDkk5hb6Y6e34s44wY67w', // Ensure uniqueness and length less than 50
 			distractionFreeMode: false, // Facebook-like distraction free mode
 		});
 		gitalk.render('gitalk-container');
