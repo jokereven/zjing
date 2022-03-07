@@ -56,3 +56,7 @@
 	font-family: 宋体;
 	font-weight: 600;
 }
+
+.content a {
+	color: #005caf;
+}
