@@ -29,6 +29,7 @@
     "valine": "^1.4.16"
   },
   "devDependencies": {
+    "axios": "^0.27.2",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0"
   }
