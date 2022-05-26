@@ -23,7 +23,7 @@ export default function Post({ postData }) {
 			clientID: 'c89d22e7707f5120befa',
 			clientSecret: '92d18237ec0a6e8cecf6b77c61c225adfe61c308',
 			repo: 'zjing',
-			owner: 'cnzjing125',
+			owner: 'gnorev',
 			admin: ['jokereven'],
 			id: 'NDmHpDkk5hb6Y6e34s44wY67w', // Ensure uniqueness and length less than 50
 			distractionFreeMode: false, // Facebook-like distraction free mode
