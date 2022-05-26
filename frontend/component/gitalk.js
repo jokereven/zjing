@@ -2,8 +2,8 @@ import Gitalk from 'gitalk';
 import 'gitalk/dist/gitalk.css';
 
 var gitalk = new Gitalk({
-	clientID: 'c89d22e7707f5120befa',
-	clientSecret: '92d18237ec0a6e8cecf6b77c61c225adfe61c308',
+	clientID: '0ea82e516525cbd4f6ab',
+	clientSecret: 'c10645f00aa26d97c87dd91d61116a74f775b4c1',
 	repo: 'zjing',
 	owner: 'gnorev',
 	admin: ['jokereven'],
